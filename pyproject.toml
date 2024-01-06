@@ -1,6 +1,6 @@
 [project]
 name = "datasette-upgrade"
-version = "0.1"
+version = "0.1a0"
 description = "Upgrade Datasette instance configuration to handle new features"
 readme = "README.md"
 authors = [{name = "Simon Willison"}]
