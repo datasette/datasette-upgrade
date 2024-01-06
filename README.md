@@ -15,7 +15,12 @@ datasette install datasette-upgrade
 ```
 ## Usage
 
-**This plugin is in development and does not yet do anything useful.**
+The plugin currently provides one command, which will split an old style `metadata.json` or `metadata.yml` file - which contains both metadata and plugin configuration and permissions, into a Datasette 1.0+ `metadata.yml` file and a `datasette.yml` file.
+
+```bash
+datasette upgrade metadata-to-config metadata.json -m metadata.yml -c datasette.yml
+```
+This will leave `metadata.json` in place, but will write out `metadata.yml` and `datasette.yml` as two new files.
 
 ## Development
 
